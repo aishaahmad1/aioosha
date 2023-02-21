@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LostPerson"
+    android:gravity="center"
+    android:padding="20dp"
+    android:backgroundTint="#A3A49F "
+    android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:onClick="openGallerie"
+        android:layout_width="129dp"
+        android:layout_height="123dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="25"
+        android:hint="Name"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#C29F77"
+        app:helperTextTextColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_person_outline_24"
+        app:startIconTint="#A3A49F"
+        tools:layout_editor_absoluteY="150dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Name"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="25"
+        android:hint="Age"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#C29F77"
+        app:helperTextTextColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_person_outline_24"
+        app:startIconTint="#A3A49F"
+        tools:layout_editor_absoluteY="150dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/age"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="25"
+        android:hint="phone"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#C29F77"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        app:helperTextTextColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconDrawable="@drawable/phone"
+        app:startIconTint="#A3A49F"
+        tools:layout_editor_absoluteY="150dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="25"
+        android:hint="National ID"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#C29F77"
+        app:counterEnabled="true"
+        app:counterMaxLength="13"
+        app:helperTextTextColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_account_box_24"
+        app:startIconTint="#A3A49F"
+        tools:layout_editor_absoluteY="150dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/N_ID"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="25"
+        android:hint="Email"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#C29F77"
+
+        app:helperTextTextColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconDrawable="@drawable/email_24"
+        app:startIconTint="#A3A49F"
+        tools:layout_editor_absoluteY="150dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/etSelectData"
+        android:layout_width="343dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:drawableStart="@drawable/calendar"
+        android:ems="25"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="   Date"
+        android:paddingStart="10dp"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="25"
+        android:hint="Location"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#C29F77"
+        app:helperTextTextColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconDrawable="@drawable/address"
+        app:startIconTint="#A3A49F"
+        tools:layout_editor_absoluteY="150dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/location"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#821824 "
+        android:onClick="btn_add_data"
+        android:textStyle="bold"
+        android:text="Add" />
+
+</LinearLayout>
+</ScrollView>
